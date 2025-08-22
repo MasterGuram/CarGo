@@ -148,28 +148,16 @@ body {
   width: 15px;
   height: 10px;
 }
-
 ::-webkit-scrollbar-track { background: var(--white); }
-
 ::-webkit-scrollbar-thumb {
   background: hsla(219, 14%, 60%, 0.3);
   border: 2px solid var(--white);
 }
-
 ::-webkit-scrollbar-thumb:hover { background: hsla(219, 14%, 60%, 0.5); }
 
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
-
+/* REUSED STYLE */
 .container { padding-inline: 15px; }
-
 button, a { transition: var(--transition); }
-
 .btn {
   position: relative;
   background: var(--background, var(--carolina-blue));
@@ -185,12 +173,10 @@ button, a { transition: var(--transition); }
   font-weight: var(--fw-600);
   overflow: hidden;
 }
-
 .btn ion-icon {
   font-size: 22px;
   --ionicon-stroke-width: 40px;
 }
-
 .btn::before {
   content: "";
   position: absolute;
@@ -200,13 +186,9 @@ button, a { transition: var(--transition); }
   pointer-events: none;
   transition: var(--transition);
 }
-
 .btn:is(:hover, :focus) { box-shadow: var(--shadow-2); }
-
 .btn:is(:hover, :focus)::before { opacity: 1; }
-
 .section { padding-block: var(--section-padding); }
-
 .h1,
 .h2,
 .h3 {
@@ -214,31 +196,18 @@ button, a { transition: var(--transition); }
   font-family: var(--ff-nunito);
   line-height: 1.4;
 }
-
 .h1 {
   font-size: var(--fs-1);
   text-transform: uppercase;
 }
-
 .h2,
 .h3 { font-weight: var(--fw-400); }
-
 .h2 { font-size: var(--fs-2); }
-
 .h3 { font-size: var(--fs-4); }
-
 .w-100 { width: 100%; }
 
-
-
-
-
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
+/* HEADER */
 .header-contact { display: none; }
-
 .header {
   background: var(--alice-blue-1);
   position: fixed;
@@ -248,31 +217,25 @@ button, a { transition: var(--transition); }
   transition: var(--transition);
   z-index: 4;
 }
-
 .header.active { box-shadow: var(--shadow-1); }
-
 .header .container {
   height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .header-actions {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .header-actions .btn span { display: none; }
-
 .user-btn {
   --color: var(--independence);
   --background: var(--white);
   --shadow-2: var(--shadow-1);
   box-shadow: var(--shadow-1);
 }
-
 .nav-toggle-btn span {
   background: var(--independence);
   width: 22px;
@@ -282,18 +245,13 @@ button, a { transition: var(--transition); }
   transform-origin: right;
   transition: var(--transition);
 }
-
 .nav-toggle-btn span.two { transform: scaleX(0.7); }
-
 .nav-toggle-btn span.three { transform: scaleX(0.4); }
-
 .nav-toggle-btn:is(:hover, :focus) span { background: var(--carolina-blue); }
-
 .nav-toggle-btn.active span {
   transform: scaleX(1);
   background: var(--carolina-blue);
 }
-
 .navbar {
   background: var(--alice-blue-1);
   position: fixed;
@@ -308,13 +266,11 @@ button, a { transition: var(--transition); }
   visibility: hidden;
   transition: 0.25s cubic-bezier(0.51, 0.03, 0.64, 0.28);
 }
-
 .navbar.active {
   visibility: visible;
   transform: translateX(-100%);
   transition: 0.5s cubic-bezier(0.33, 0.85, 0.56, 1.02);
 }
-
 .navbar-link {
   color: var(--independence);
   font-family: var(--ff-nunito);
@@ -322,9 +278,7 @@ button, a { transition: var(--transition); }
   padding-block: 5px;
   margin-bottom: 15px;
 }
-
 .navbar-link:is(:hover, :focus) { color: var(--carolina-blue); }
-
 .overlay {
   position: fixed;
   top: 70px;
@@ -336,15 +290,10 @@ button, a { transition: var(--transition); }
   pointer-events: none;
   transition: var(--transition);
 }
-
 .overlay.active {
   opacity: 0.7;
   pointer-events: all;
 }
-
-
-
-
 
 /*-----------------------------------*\
   #HERO
